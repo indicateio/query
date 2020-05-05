@@ -20,12 +20,12 @@ const (
 var types = map[JoinType]string{
     JoinTypeBase:       "JOIN",
     JoinTypeLeft:       "LEFT JOIN",
-    JoinTypeLeftOuter:  "LEFT JOIN OUTER",
+    JoinTypeLeftOuter:  "LEFT OUTER JOIN",
     JoinTypeRight:      "RIGHT JOIN",
-    JoinTypeRightOuter: "RIGHT JOIN OUTER",
+    JoinTypeRightOuter: "RIGHT OUTER JOIN",
     JoinTypeInner:      "INNER JOIN",
     JoinTypeFull:       "FULL JOIN",
-    JoinTypeFullOuter:  "FULL JOIN OUTER",
+    JoinTypeFullOuter:  "FULL OUTER JOIN",
     JoinTypeNatural:    "NATURAL JOIN",
     JoinTypeCross:      "CROSS JOIN",
 }
