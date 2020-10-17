@@ -235,7 +235,7 @@ func main() {
     where := query.NewPredicate(
         query.CombineAnd,
         false,
-        query.LessThan("ta.created_date_time", query.PlaceholderQMark.String()),
+        query.LessThan("created_date_time", query.PlaceholderQMark.String()),
     )
 
     q.Where(where)
@@ -263,11 +263,11 @@ import (
 )
 
 func main() {
-    q := query.NewDelete(query.As("table_name_a", "ta"))
+    q := query.NewDelete("table_name_a")
     where := query.NewPredicate(
         query.CombineAnd,
         false,
-        query.LessThan("ta.created_date_time", query.PlaceholderQMark.String()),
+        query.LessThan("created_date_time", query.PlaceholderQMark.String()),
     )
 
     q.Where(where)
@@ -278,8 +278,8 @@ func main() {
 outputs: 
 ```mysql
 DELETE 
-    FROM table_name_a AS ta 
-WHERE ta.created_date_time < ?
+    FROM table_name_a
+WHERE created_date_time < ?
 ```
 
 

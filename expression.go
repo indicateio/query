@@ -5,6 +5,8 @@ import (
     "strings"
 )
 
+// TODO add something like this COUNT(DISTINCT id)
+
 func As(n, a string) string {
     return fmt.Sprintf("%s AS %s", n, a)
 }

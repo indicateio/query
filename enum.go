@@ -66,7 +66,7 @@ var operators = map[Operator]string{
     OperatorGt:    ">",
     OperatorGtEq:  ">=",
     OperatorLt:    "<",
-    OperatorLtEq:  "=<",
+    OperatorLtEq:  "<=",
 }
 
 func (e Operator) IsValid() bool {
